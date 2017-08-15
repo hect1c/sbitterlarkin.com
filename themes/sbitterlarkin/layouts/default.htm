@@ -1,0 +1,92 @@
+description = "Default Layout"
+
+[menu]
+menu_id = "1"
+
+[SeoCmsPage]
+==
+<?php
+use Flynsarmy\Menu\Models\Menu;
+
+function onStart()
+{
+    //setup image path based on page
+    $this['path'] = 'assets/images/'.$this->page->id.'_skyline.jpg';
+
+    $items_disabled = 0;
+    $menu = Menu::find(1);
+
+    if( isset( $menu ) ){
+        foreach( $menu->items as $item ){
+            $items = $item->toArray();
+
+            if( $items['enabled'] == 0 ){
+                $items_disabled++;
+            }
+        }
+    }
+
+    $this['items_disabled'] = $items_disabled;
+}
+?>
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        {% component 'SeoCmsPage' %}
+        <!-- link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}" / -->
+        {% styles %}
+        <link href="{{ [
+            'assets/css/theme.css'
+        ]|theme }}" rel="stylesheet">
+        <script src="{{ [
+            'assets/js/jquery.js'
+        ]|theme }}"></script>
+        <script src="{{ [
+            'assets/js/jquery.justifyNav.js'
+        ]|theme }}"></script>
+        <script>
+        $(document).ready(function(){
+           $('#navbar').justifyNav();
+        });
+        </script>
+    </head>
+    <body>
+        <div class="site-wrapper">
+            <div class="site-wrapper-inner">
+                <div class="cover-container">
+                    <!-- Header Partial -->
+                    <header id="layout-header" class="page-{{ this.page.id }} menu-tabs-{{ items_disabled }}">
+                        <!-- Logo -->
+                        <h1 class="site-logo"></h1>
+                        <!-- Navbar -->
+                        <nav id="layout-nav" class="clearfix menu-tabs-{{ items_disabled }}">
+                            {% component "menu" %}
+                        </nav>
+                    </header>
+                    <!-- Content -->
+                    <section id="layout-content">
+                        {% page %}
+                    </section>
+
+                    {% if this.page.id == 'contact' %}
+                        <!-- Footer -->
+                        <footer id="layout-footer">
+                            {% partial "footer" %}
+                        </footer>
+                    {% endif %}
+
+                </div>
+            </div>
+        </div>
+
+        <div id="wrapper" class="page-{{ this.page.id }}">
+            <img id="footer-bg" src="{{path|theme}}"/>
+        </div>
+
+        <!-- Scripts -->
+
+        {% framework extras %}
+        {% scripts %}
+    </body>
+</html>

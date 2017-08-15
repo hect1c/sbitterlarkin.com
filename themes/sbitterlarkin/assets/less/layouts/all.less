@@ -1,0 +1,147 @@
+// out: ../css/layouts/all.css, sourcemap: true, compress: true
+// Layouts
+//
+// Styles specific to different page layouts.
+//
+
+// Used by the fixed navigation
+body {
+    background-repeat: repeat-x repeat-y;
+    text-align: center;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  position: absolute;
+}
+
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.cover-container {
+  width: 100%;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+#wrapper {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  z-index: -5;
+}
+
+#wrapper img {
+  height: 250px;
+}
+
+#wrapper.page-about img {
+  height: 350px;
+}
+
+#wrapper.page-services img {
+  height: 350px;
+}
+
+#wrapper.page-contact img {
+  height: 350px;
+}
+
+#wrapper.page-projects img {
+  height: 0px;
+}
+
+#wrapper.page-gallery img {
+  height: 0px;
+}
+
+#wrapper.page-artists img {
+  height: 0px;
+}
+
+#wrapper.page-images img {
+  height: 0px;
+}
+
+#wrapper.page-contact{
+  margin-bottom: 7px;
+}
+
+
+/**
+ * Content
+ */
+
+#main-content{
+  margin: 0px 15px 15px 15px;
+  text-align: left;
+  font-family: "Brandon";
+}
+
+#main-content.contact{
+  margin-bottom: 55px !important;
+}
+
+#content-header{
+  width: 30%;
+  height: 35px;
+  line-height: 35px;
+  background: url('../images/border.png') bottom center no-repeat;
+}
+
+#layout-content{
+    padding-bottom: 10px;
+    width: 800px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 5px;
+    //border: 8px white solid;
+}
+
+#layout-nav{
+  display: inline-block;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .site-wrapper-inner{
+    vertical-align: middle;
+  }
+  .contact-info{
+    position: relative;
+    bottom: 0;
+  }
+  #layout-header,
+  #layout-footer,
+  .cover-container{
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .site-wrapper-inner{
+    vertical-align: middle;
+  }
+  #layout-nav,
+  #layout-footer,
+  .cover-container{
+    width: 800px;
+  }
+}
+
+input {
+  display: block;
+  width: 200px;
+}
+
+// Header Lesss
+@import "header.less";
+
+//Footer Less
+@import "footer.less";

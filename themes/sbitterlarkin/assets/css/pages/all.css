@@ -1,0 +1,13 @@
+.gallery-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+.image-title {
+  font-weight: 300;
+}
+.image-title2 {
+  font-style: italic;
+}

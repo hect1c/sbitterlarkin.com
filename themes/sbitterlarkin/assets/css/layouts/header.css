@@ -1,0 +1,30 @@
+.site-logo {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background: url('../images/logo.png') no-repeat center;
+}
+/**
+ * Navbar
+ */
+#navbar {
+  background: url('../images/sbitterlarkin_nav_1.png') top center no-repeat;
+  height: 53px;
+  text-transform: uppercase;
+  font-weight: bold;
+  /* border:1px solid #ccc;
+    border-width:1px 0; */
+  list-style: none;
+  padding: 0 35px;
+  *zoom: 1;
+  overflow: hidden;
+}
+#navbar li {
+  display: block;
+  float: left;
+}
+#navbar li a {
+  display: inline-block;
+  color: black;
+  padding: 17px;
+}

@@ -1,0 +1,38 @@
+title = "Image"
+url = "/gallery/:gallery_id/:item_id"
+layout = "default"
+hidden = "0"
+meta_title = "Sylvie Bitter-Larkin | Gallery"
+meta_description = "In addition to displaying cutting edge art, the gallery sold major works of modern masters including: Alexander Calder, Francis Bacon, Jean-Michel Basquiat, Joseph Cornell, Gerhard Richter, Ed Rusha, Frank Stella, Andy Warhol, Alexander Calder, and Tom Wesselman."
+seo_keywords = "private art dealer ny, contemporary art ny, art consultant ny, new york, private art dealer new york, contemporary art new york, sylvie bitter-larkin, sbitterlarkin, art consultant geneva, art advisor new york, art advisor ny, art dealer new york, art dealer geneva, sylvie bitterlarkin, selling art new york, buying art new york, sylvie bitterlarkin ny, sylvie bitterlarkin private art dealer ny, sbitterlarkin private art dealer ny, sbitterlarkin gallery, sylvie bitter-larkin gallery"
+robot_index = "index"
+robot_follow = "follow"
+==
+use SbitterLarkin\LarkinGallery\Controllers\SGallery;
+
+function onStart()
+{
+    $gallery_id = $this->param('gallery_id');
+    $image_id = $this->param('item_id');
+
+    $image = SGallery::setGallery($gallery_id, $image_id);
+
+    $this['image'] = $image;
+}
+==
+<div id="main-content">
+    <h3 id="content-header">{{ image.title }}</h3>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- <img class="gallery-image" src="{{ image.path }}" /> -->
+                <img class="gallery-image" src="{{ image.getThumb('350', '', 'auto') }}" />
+            </div>
+            <div class="col-md-6">
+                <h4 class="image-title">{{ image.title }}</h4>
+                <h5 class="image-title2">{{ image.title2 }}</h5>
+                <p>{{ image.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>

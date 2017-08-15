@@ -1,0 +1,17 @@
+1502832918a:1:{s:9:"about.htm";a:14:{s:8:"fileName";s:9:"about.htm";s:7:"content";s:1083:"title = "About Us"
+url = "/about"
+layout = "default"
+hidden = "0"
+meta_title = "Sylvie Bitter-larkin | About"
+meta_description = "Sylvie Bitter-larkin was the founder of the S. Bitter-Larkin Gallery in New York, which specialized in discovering and promoting the careers of new artists such as, among others, Patrick Corillon, Thomas Demand, Roland Flexner, Jim Lutes, Michel Mouffe, Yigal Ozeri, Michal Rovner, Karin Sander."
+seo_keywords = "private art dealer ny, contemporary art ny, art consultant ny, new york, private art dealer new york, contemporary art new york, sylvie bitter-larkin, sbitterlarkin, art consultant geneva, art advisor new york, art advisor ny, art dealer new york, art dealer geneva, sylvie bitterlarkin, selling art new york, buying art new york, sylvie bitterlarkin ny, sylvie bitterlarkin private art dealer ny, sbitterlarkin private art dealer ny, sbitterlarkin about, sylvie bitter-larkin about"
+robot_index = "index"
+robot_follow = "follow"
+==
+<div id="main-content">
+<h3 id="content-header">{{ this.page.title }}</h3>
+{% content "about.htm" %}
+</div>";s:5:"mtime";i:1502716115;s:6:"markup";s:107:"<div id="main-content">
+<h3 id="content-header">{{ this.page.title }}</h3>
+{% content "about.htm" %}
+</div>";s:4:"code";N;s:5:"title";s:8:"About Us";s:3:"url";s:6:"/about";s:6:"layout";s:7:"default";s:6:"hidden";s:1:"0";s:10:"meta_title";s:28:"Sylvie Bitter-larkin | About";s:16:"meta_description";s:295:"Sylvie Bitter-larkin was the founder of the S. Bitter-Larkin Gallery in New York, which specialized in discovering and promoting the careers of new artists such as, among others, Patrick Corillon, Thomas Demand, Roland Flexner, Jim Lutes, Michel Mouffe, Yigal Ozeri, Michal Rovner, Karin Sander.";s:12:"seo_keywords";s:482:"private art dealer ny, contemporary art ny, art consultant ny, new york, private art dealer new york, contemporary art new york, sylvie bitter-larkin, sbitterlarkin, art consultant geneva, art advisor new york, art advisor ny, art dealer new york, art dealer geneva, sylvie bitterlarkin, selling art new york, buying art new york, sylvie bitterlarkin ny, sylvie bitterlarkin private art dealer ny, sbitterlarkin private art dealer ny, sbitterlarkin about, sylvie bitter-larkin about";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";}}

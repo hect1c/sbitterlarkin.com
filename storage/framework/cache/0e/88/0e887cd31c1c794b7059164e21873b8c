@@ -1,0 +1,17 @@
+1502832918a:1:{s:12:"services.htm";a:14:{s:8:"fileName";s:12:"services.htm";s:7:"content";s:1036:"title = "Services"
+url = "/services"
+layout = "default"
+hidden = "0"
+meta_title = "Sylvie Bitter-larkin | Services"
+meta_description = "Sylvie Bitter-Larkin provides assistance in acquisition, defining and targeting your specific interests, leading you to selected galleries and artists, as well as offering the added benefit of access to more confidential sources."
+seo_keywords = "private art dealer ny, contemporary art ny, art consultant ny, new york, private art dealer new york, contemporary art new york, sylvie bitter-larkin, sbitterlarkin, art consultant geneva, art advisor new york, art advisor ny, art dealer new york, art dealer geneva, sylvie bitterlarkin, selling art new york, buying art new york, sylvie bitterlarkin ny, sylvie bitterlarkin private art dealer ny, sbitterlarkin private art dealer ny, sbitterlarkin services, sylvie bitter-larkin services"
+robot_index = "index"
+robot_follow = "follow"
+==
+<div id="main-content">
+<h3 id="content-header">{{ this.page.title }}</h3>
+    {% content "services.htm" %}
+</div>";s:5:"mtime";i:1502716115;s:6:"markup";s:114:"<div id="main-content">
+<h3 id="content-header">{{ this.page.title }}</h3>
+    {% content "services.htm" %}
+</div>";s:4:"code";N;s:5:"title";s:8:"Services";s:3:"url";s:9:"/services";s:6:"layout";s:7:"default";s:6:"hidden";s:1:"0";s:10:"meta_title";s:31:"Sylvie Bitter-larkin | Services";s:16:"meta_description";s:229:"Sylvie Bitter-Larkin provides assistance in acquisition, defining and targeting your specific interests, leading you to selected galleries and artists, as well as offering the added benefit of access to more confidential sources.";s:12:"seo_keywords";s:488:"private art dealer ny, contemporary art ny, art consultant ny, new york, private art dealer new york, contemporary art new york, sylvie bitter-larkin, sbitterlarkin, art consultant geneva, art advisor new york, art advisor ny, art dealer new york, art dealer geneva, sylvie bitterlarkin, selling art new york, buying art new york, sylvie bitterlarkin ny, sylvie bitterlarkin private art dealer ny, sbitterlarkin private art dealer ny, sbitterlarkin services, sylvie bitter-larkin services";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";}}

@@ -1,0 +1,55 @@
+1502832918a:1:{s:11:"gallery.htm";a:15:{s:8:"fileName";s:11:"gallery.htm";s:7:"content";s:1565:"title = "Artists"
+url = "/artists"
+layout = "default"
+hidden = "0"
+meta_title = "Sylvie Bitter-Larkin | Artists"
+meta_description = "In addition to displaying cutting edge art, the gallery sold major works of modern masters including: Alexander Calder, Francis Bacon, Jean-Michel Basquiat, Joseph Cornell, Gerhard Richter, Ed Rusha, Frank Stella, Andy Warhol, Alexander Calder, and Tom Wesselman."
+seo_keywords = "private art dealer ny, contemporary art ny, art consultant ny, new york, private art dealer new york, contemporary art new york, sylvie bitter-larkin, sbitterlarkin, art consultant geneva, art advisor new york, art advisor ny, art dealer new york, art dealer geneva, sylvie bitterlarkin, selling art new york, buying art new york, sylvie bitterlarkin ny, sylvie bitterlarkin private art dealer ny, sbitterlarkin private art dealer ny, sbitterlarkin gallery, sylvie bitter-larkin gallery"
+robot_index = "index"
+robot_follow = "follow"
+
+[gallery]
+idGallery = "4"
+lang = "Gallery"
+jqueryinject = "no"
+thumbnail = "false"
+caption = "true"
+desc = "true"
+counter = "true"
+controls = "true"
+preload = "6"
+mode = "fade"
+speed = "500"
+loop = "false"
+auto = "false"
+pause = "2000"
+escKey = "true"
+height = "150"
+width = "150"
+resizer = "auto"
+==
+<!-- Gallery -->
+<div id="main-content" class="{{ this.page.id }}">
+    <h3 id="content-header">{{ this.page.title }}</h3>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div style="margin-left: 20px;">
+            {% component 'gallery' %}
+        </div>
+    </div>
+</div>
+<!-- End Gallery -->";s:5:"mtime";i:1502716115;s:6:"markup";s:315:"<!-- Gallery -->
+<div id="main-content" class="{{ this.page.id }}">
+    <h3 id="content-header">{{ this.page.title }}</h3>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div style="margin-left: 20px;">
+            {% component 'gallery' %}
+        </div>
+    </div>
+</div>
+<!-- End Gallery -->";s:4:"code";N;s:5:"title";s:7:"Artists";s:3:"url";s:8:"/artists";s:6:"layout";s:7:"default";s:6:"hidden";s:1:"0";s:10:"meta_title";s:30:"Sylvie Bitter-Larkin | Artists";s:16:"meta_description";s:263:"In addition to displaying cutting edge art, the gallery sold major works of modern masters including: Alexander Calder, Francis Bacon, Jean-Michel Basquiat, Joseph Cornell, Gerhard Richter, Ed Rusha, Frank Stella, Andy Warhol, Alexander Calder, and Tom Wesselman.";s:12:"seo_keywords";s:486:"private art dealer ny, contemporary art ny, art consultant ny, new york, private art dealer new york, contemporary art new york, sylvie bitter-larkin, sbitterlarkin, art consultant geneva, art advisor new york, art advisor ny, art dealer new york, art dealer geneva, sylvie bitterlarkin, selling art new york, buying art new york, sylvie bitterlarkin ny, sylvie bitterlarkin private art dealer ny, sbitterlarkin private art dealer ny, sbitterlarkin gallery, sylvie bitter-larkin gallery";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";s:7:"gallery";a:18:{s:9:"idGallery";s:1:"4";s:4:"lang";s:7:"Gallery";s:12:"jqueryinject";s:2:"no";s:9:"thumbnail";s:5:"false";s:7:"caption";s:4:"true";s:4:"desc";s:4:"true";s:7:"counter";s:4:"true";s:8:"controls";s:4:"true";s:7:"preload";s:1:"6";s:4:"mode";s:4:"fade";s:5:"speed";s:3:"500";s:4:"loop";s:5:"false";s:4:"auto";s:5:"false";s:5:"pause";s:4:"2000";s:6:"escKey";s:4:"true";s:6:"height";s:3:"150";s:5:"width";s:3:"150";s:7:"resizer";s:4:"auto";}}}

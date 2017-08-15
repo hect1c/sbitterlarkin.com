@@ -1,0 +1,42 @@
+title = "Contact"
+url = "/contact"
+layout = "default"
+meta_title = "Sylvie Bitter-Larkin | Contact"
+meta_description = "S. Bitter-Larkin has also built and continues to manage her own personal art collection which includes the works of up and coming as well as established artists. Contact Sylvie Bitter-larkin for further inquiry."
+is_hidden = 0
+seo_keywords = "private art dealer ny, contemporary art ny, art consultant ny, new york, private art dealer new york, contemporary art new york, sylvie bitter-larkin, sbitterlarkin, art consultant geneva, art advisor new york, art advisor ny, art dealer new york, art dealer geneva, sylvie bitterlarkin, selling art new york, buying art new york, sylvie bitterlarkin ny, sylvie bitterlarkin private art dealer ny, sbitterlarkin private art dealer ny, sbitterlarkin contact, sylvie bitter-larkin contact"
+robot_index = "index"
+robot_follow = "follow"
+
+[contactForm]
+injectBootstrapAssets = 1
+injectMainScript = 1
+==
+<div id="main-content" class="{{ this.page.id }}">
+<h3 id="content-header">{{ this.page.title }}</h3>
+<div>
+<div class="confirm-container">
+    <!--This will contain the confirmation when the email is successfully sent-->
+</div>
+<form class="flexiContactForm" role="form"
+      data-request="{{ __SELF__ }}::onMailSent"
+      data-request-update="'{{ __SELF__ }}::confirm': '.confirm-container'">
+
+    <div class="form-groups">
+        <div class="form-group">
+            <input type="text" class="form-control" value=""  name="name" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="email" placeholder="Enter Email">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="subject" placeholder="Enter Subject">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" value="" name="body" placeholder="Enter Message" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg pull-right">Send</button>
+    </div>
+</form>
+</div>
+</div>
